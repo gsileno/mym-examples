@@ -1,40 +1,21 @@
 <?php
-/*
-   File: config.php | (c) Giovanni Sileno 2006, 2011
-   Distributed as part of "MyM - avant CMS"
-   -----------------------------------------------------------------
-   This file is part of MyM.
-
-   MyM is free software; you can redistribute it and/or modify
-   it under the terms of the GNU Lesser General Public License as published by
-   the Free Software Foundation; either version 3 of the License, or
-   (at your option) any later version.
-
-   MyM is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU Lesser General Public License for more details.
-   
-   You should have received a copy of the GNU Lesser General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-   -----------------------------------------------------------------
-   This files contains general settings to customize MyM. 
-*/
 
   // time zone requirements // obligatory since PHP 5.3
   date_default_timezone_set('Europe/Rome');
   
+  ///////////////////////////////////////////
   // MyM configuration
-
+  ///////////////////////////////////////////
+  
   // directories definition
   
   // root is the directory where is located the index.php served by the URI
   // app is the directory containing the structures/modules/definition + txtdb
   // mym is the directory containing mym :)
   
-  define('ROOT_RELATIVE_PATH', '../examples/empty'); // from mym to root dir
+  define('ROOT_RELATIVE_PATH', '../mym-examples/empty'); // from mym to root dir
   define('APP_RELATIVE_PATH', './app'); // from root to app dir
-  if (!defined('MYM_RELATIVE_PATH')) define('MYM_RELATIVE_PATH', '../../MyM'); // from root to mym dir  
+  if (!defined('MYM_RELATIVE_PATH')) define('MYM_RELATIVE_PATH', '../../mym-cms'); // from root to mym dir  
     
   // app URI
   define("ROOT_URI", "http://localhost/test/empty");
