@@ -13,9 +13,9 @@
   // app is the directory containing the structures/modules/definition + txtdb
   // mym is the directory containing mym :)
   
-  define('ROOT_RELATIVE_PATH', '../mym-examples/empty'); // from mym to root dir
+  define('ROOT_RELATIVE_PATH', '../mym-examples/'); // from mym to root dir
   define('APP_RELATIVE_PATH', './app'); // from root to app dir
-  if (!defined('MYM_RELATIVE_PATH')) define('MYM_RELATIVE_PATH', '../../mym-cms'); // from root to mym dir  
+  if (!defined('MYM_RELATIVE_PATH')) define('MYM_RELATIVE_PATH', '../mym-cms'); // from root to mym dir  
     
   // app URI
   define("ROOT_URI", "http://localhost/test/empty");
